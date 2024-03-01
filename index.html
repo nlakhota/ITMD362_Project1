@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>HTML Form Elements</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="Mail List">
+  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
+  <link rel="stylesheet" media="screen" href="css/screen.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+<main id="content">
+  <form method="get" action="#null">
+    <h1>Mercedes F1 Newsletter</h1>
+    <p>
+      Welcome to Mercedes F1 Fandom. Subscirbe to keep up to date with all things Mercedes F1. From the paddock to the track. We have all the sights and sounds from the Mercedes F1 trackside.
+    </p>
+    <ol>
+	  <li id="input-firstname">
+	    <label for="firstname" id="text-fname">First Name</label>
+        <input type="text" id="firstname" name="name" required>
+	  </li>
+	  <li id="input-lastname">
+	    <label for="lastname" id="text-lname">Last Name</label>
+        <input type="text" id="lastname" name="name" required>
+	  </li>
+      <li id="input-email">
+        <label for="email" id="text-email">Email</label>
+        <input type="email" name="email" id="email" pattern="^.+@.+$">
+      </li>
+      <li id="input-age-verification">
+        <input type="checkbox" id="age-verification" name="age-verification" value="18">
+        <label for="age-verification">I'd like to be notified with Mercedes F1 News!</label>
+      </li>
+      <li id="input-submit">
+        <input type="submit" name="submit" id="submit" value="Subscribe">
+      </li>
+    </ol>
+  </form>
+</main>
+  <script src="js/script.js"></script>
+</body>
+</html>
