@@ -113,15 +113,19 @@ form p {
 
 @media screen and (max-width: 768px) {
   .content {
-    width: 40%;
-    float: center;
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .content {
-    width: 60%;
-    float: center;
+    width: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
