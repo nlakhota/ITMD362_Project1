@@ -41,7 +41,7 @@ form p {
   width: 75%;
 }
 
-#text-email #text-fname #text-lname{
+#text-email, #text-fname, #text-lname{
   font-size: 30px;	
   padding: 5px;
 }
