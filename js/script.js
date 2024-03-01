@@ -1,7 +1,7 @@
 function init(){
-  var emailInput = document.getElementById('email');
-  var FnameInput = document.getElementById('firstname');
-  var LnameInput = document.getElementById('lastname');
+  var emailInput = document.getElementById('email').value;
+  var FnameInput = document.getElementById('firstname').value;
+  var LnameInput = document.getElementById('lastname').value;
   var isChecked = document.getElementById('age-verification').checked;
   button.addEventListener("click", myFunction);
  
