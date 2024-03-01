@@ -3,6 +3,7 @@ function init(){
   var FnameInput = document.getElementById('firstname').value;
   var LnameInput = document.getElementById('lastname').value;
   var isChecked = document.getElementById('age-verification').checked;
+  var button = document.getElementById('submit');
   button.addEventListener("click", myFunction);
  
 
