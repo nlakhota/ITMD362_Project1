@@ -111,22 +111,52 @@ form p {
   width: 100%; 
 }
 
+/* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
-  .content {
-    width: 5%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  body {
+    margin: 5%;
+  }
+
+  form {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 3%; /* Adjust padding for smaller screens */
+  }
+
+  form h1 {
+    font-size: 40px; /* Decrease font size for smaller screens */
+  }
+
+  form p {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  #firstname, #lastname, #email {
+    width: 80%; /* Adjust input width for smaller screens */
+    font-size: 12px; /* Decrease font size for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .content {
-    width: 20%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* Further adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  form {
+    padding: 2%; /* Further reduce padding for very small screens */
+  }
+
+  form h1 {
+    font-size: 30px; /* Further decrease font size for very small screens */
+  }
+
+  form p {
+    font-size: 16px; /* Further decrease font size for very small screens */
+  }
+
+  #firstname, #lastname, #email {
+    width: 90%; /* Further adjust input width for very small screens */
+    font-size: 10px; /* Further decrease font size for very small screens */
+    padding: 3px; /* Further adjust padding for very small screens */
   }
 }
+
 
 
