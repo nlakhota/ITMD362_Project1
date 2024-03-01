@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('form').addEventListener('submit', function(event) {
+window.addEventListener('load', function() {
+  document.getElementById('submit').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent default form submission
 
     // Retrieve the entered email
