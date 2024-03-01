@@ -114,18 +114,14 @@ form p {
 @media screen and (min-width: 768px) {
   .content {
     width: 40%;
-    margin-right: 5%;
-    margin-top: 2.5%;
-    float: right;
+    float: center;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    width: 40%;
-    margin-right: 5%;
-    margin-top: 2.5%;
-    float: right;
+    width: 60%;
+    float: center;
   }
 }
 
