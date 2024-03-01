@@ -47,7 +47,7 @@ form p {
 }
 
 #firstname{
-  font-size: 25px;
+  font-size: 15px;
   width: 60%;
   padding: 8px;
   border-radius: 10px;
@@ -57,7 +57,7 @@ form p {
 }
 
 #lastname {
-  font-size: 25px;
+  font-size: 15px;
   width: 60%;
   padding: 8px;
   border-radius: 10px;
@@ -67,7 +67,7 @@ form p {
 }
 
 #email {
-  font-size: 20px;
+  font-size: 15px;
   width: 60%;
   padding: 8px;
   border-radius: 10px;
