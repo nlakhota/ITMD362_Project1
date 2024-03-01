@@ -113,32 +113,19 @@ form p {
 
 @media screen and (min-width: 768px) {
   .content {
-    padding: 30px;
-  }
-
-  input {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  button {
-    padding: 12px 24px;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    float: right;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    max-width: 75%;
-    margin: 50px auto;
-  }
-
-  input {
-    padding: 12px;
-    margin-bottom: 24px;
-  }
-
-  button {
-    padding: 14px 28px;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    float: right;
   }
 }
 
