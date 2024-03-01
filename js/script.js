@@ -1,8 +1,6 @@
 window.addEventListener('load', function() {
   document.getElementById('submit').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default form submission
 
-    // Retrieve the entered email
     const emailInput = document.getElementById('email').value;
     const FnameInput = document.getElementById('firstname').value;
     const LnameInput = document.getElementById('lastname').value;
