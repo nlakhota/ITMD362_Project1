@@ -1,0 +1,111 @@
+body {
+  font-family: Anta, BlinkMacSystemFont, Roboto, sans-serif;
+  background-image: url("../media/w15.png");
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: rgba(173, 216, 230, 0);
+  color: white;
+  padding: 5%;
+  width: 100%;
+  border-radius: 5px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgba(173, 216, 230);
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+form p {
+  text-align: center;
+  color: white;
+  margin-bottom: 2%;
+  font-size: 30px;
+  padding: 10px;
+  background-color: rgba(173, 216, 230, 0);
+}
+
+#content {
+  width: 75%;
+}
+
+#text-email #text-fname #text-lname{
+  font-size: 20px;	
+  padding: 5px;
+}
+#firstname{
+  font-size: 20px;
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  border: none;
+  box-shadow: none;
+}
+
+#lastname {
+  font-size: 20px;
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  border: none;
+  box-shadow: none;
+}
+
+#email {
+  font-size: 20px;
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  border: none;
+  box-shadow: none;
+}
+
+#input-age-verification {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+#input-age-verification input[type="checkbox"] {
+  transform: scale(1.25);
+  margin-right: 15px;
+  border: none;
+  box-shadow: none;
+}
+
+#submit {
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Anta', BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+#submit:hover {
+  background-color: darkred;
+}
+
+#input-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
