@@ -1,21 +1,25 @@
-function init(){
-  var emailInput = document.getElementById('email').value;
-  var FnameInput = document.getElementById('firstname').value;
-  var LnameInput = document.getElementById('lastname').value;
-  var isChecked = document.getElementById('age-verification').checked;
-  var button = document.getElementById('submit');
-  button.addEventListener("click", myFunction);
- 
+window.onload = function() {
+    const form = document.getElementById('f1_form');
 
-  function myFunction() {
-    message = `Thank you for subscribing!\nName: ${FnameInput} ${LnameInput}\nEmail: ${emailInput}\n`;
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
 
-    if (isChecked) {
-      message += 'You will be notified with Mercedes F1 News!';
-    } else {
-      message += 'You will not be notified with Mercedes F1 News.';
+            let message = 'Thanks for subscribing!\n';
+            for (let pair of formData.entries()) {
+                message += `${pair[0]}: ${pair[1]}\n`;
+            }
+			
+			const isChecked = document.getElementById('age-verification').checked;
+			if (isChecked) {
+				message += 'You will be notified with the latest Mercedes F1 News!';
+			} else {
+				message += 'You will not be notified with the latest Mercedes F1 News.';
+			}
+	
+            console.log(message)
+            alert(message);
+        });
     }
-    alert(message);
-  }
-}
-window.addEventListener('load', init);
+};
