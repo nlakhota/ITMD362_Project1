@@ -7,38 +7,38 @@
   <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <script async src="js/script.js"></script> <!-- Changed script import to be asynchronous -->
 </head>
 <body>
+<div class="background-image"></div> <!-- Added a container for the background image -->
 <main id="content">
-  <form method="get" action="#null">
+  <form method="get" action="#null" autocomplete="on" id="f1_form"> <!-- Added autocomplete attribute -->
     <h1>Mercedes F1 Newsletter</h1>
     <p>
       Welcome to Mercedes F1 Fandom. Subscirbe to keep up to date with all things Mercedes F1. From the paddock to the track. We have all the sights and sounds from the Mercedes F1 trackside.
     </p>
     <ol>
-      <li id="input-firstname">
-	<label for="firstname" id="text-fname">First Name</label>
-        <input type="text" id="firstname" name="name" required>
-      </li>
-      <li id="input-lastname">
-	<label for="lastname" id="text-lname">Last Name</label>
-        <input type="text" id="lastname" name="name" required>
-      </li>
+	  <li id="input-firstname">
+	    <label for="firstname" id="text-fname">First Name</label>
+        <input type="text" id="firstname" name="name" required placeholder="Lewis">
+	  </li>
+	  <li id="input-lastname">
+	    <label for="lastname" id="text-lname">Last Name</label>
+        <input type="text" id="lastname" name="name" required placeholder="Hamilton">
+	  </li>
       <li id="input-email">
         <label for="email" id="text-email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$">
+        <input type="email" name="email" id="email" pattern="^.+@.+$" required placeholder="LewisHam@gmail.com">
       </li>
       <li id="input-age-verification">
-        <input type="checkbox" id="age-verification" name="age-verification" value="18">
+        <input type="checkbox" id="age-verification" name="Notify?" value="Yes">
         <label for="age-verification">I'd like to be notified with Mercedes F1 News!</label>
       </li>
       <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe">
+        <input type="submit" name="submit" id="submit" value="Add Newsletter">
       </li>
     </ol>
   </form>
 </main>
-  <script async src="js/script.js"></script>
 </body>
 </html>
-
